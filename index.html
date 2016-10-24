@@ -3,23 +3,40 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Hangman Game</title>
-	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
-	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
 </head>
-
-	<body>
-	<body background="assets/images/LongRoad.png">
-	<body background-size: 640px>
+<body>
 	
-		<script type="text/javascript">
+	<div class="container">
 
-			<div>
-			<div id="CodingTerms">
-			<div class="Wins">
-			<div class="Number of Guesses Remaining">
-			<div class="Letters Already Guessed">
+		<div class="jumbotron">
+			<h1><Strong>CODER HANGMAN</Strong></h1>
+			<h2>Guess the 4 Letters in Each Word!</h2>
+			<p>(Hint: Associated with Coding)</p>
+		</div>
+
+		<div class="panel panel-default">
+			<div class="panel heading">
+				<h3 class="panel-title">Wins</h3>
 			</div>
+			<div class="panel-body">
+				Win Counter: <span id="wincounter">0</span>
+			</div>
+		</div>
 
-		</script>
-	</body>
+		<div class="panel panel-default">
+			<div class="panel heading">
+				<h3 class="panel-title">PRESS ANY KEY TO GET STARTED!</h3>
+				<h3>Current Word:</h3>
+			</div>
+			<div class="panel-body">
+				Panel 2 Content
+			</div>
+		</div>
+
+	</div>
+
+</body>
 </html>
