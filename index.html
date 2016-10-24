@@ -19,16 +19,20 @@
 	<div class="container">
 		<div class="row">
 		<div class="col-md-6"></div>
+
 			<div class="left panel left panel-default">
 				<div class="left panel heading">
-					<h3 class="left panel-title">Wins:</h3>
+					<h3 class="left panel-title">Scoreboard</h3>
 				</div>
 
+				<div class="left panel-body">
+					<h3 class="left panel-title">Wins:</h3>
+				</div>
 				<div class="left panel-body">
 					Win Counter: <span id="winCounter">0</span>
 				</div>
 
-				<div class="left panel heading">
+				<div class="left panel-body">
 					<h3 class="left panel-title">Losses:</h3>
 				</div>
 				<div class="left panel-body">
@@ -41,22 +45,33 @@
 	<div class="container">
 		<div class="row>">
 		<div class="col-md-6"></div>
-			<div class="right panel panel-default">
+
+			<div class="right panel right panel-default">
 				<div class="right panel heading">
 					<h3 class="right panel-title">PRESS ANY KEY TO GET STARTED!</h3>
-					<h3>Current Word:</h3>
-				</div>
-				<div class="right panel-body">
-					<h2>_ _ _ _</h2>
 				</div>
 
 				<div class="right panel-body">
-					<h3>Number of Guesses Remaining: <span id="NumGuesses"></span></h3>
+					<h3 class="right panel-title">Current Word:</h3>
+				</div>
+				<div class="right panel-body">
+					<h3>_ _ _ _</h3>
 				</div>
 
 				<div class="right panel-body">
-					<h3>Letters Already Guessed: <span id="wrongGuesses"></span></h3>
+					<h3 class="right panel-title">Number of Guesses Remaining:</h3>
 				</div>
+					<div class="right panel-body">
+					Number of Guesses Counter:<span id="NumGuesses">0</span>
+				</div>
+
+				<div class="right panel-body">
+					<h3 class="right panel-title">Letters Already Guessed:</h3>
+				</div>
+					<div class="right panel-body">
+					Letters Guessed Counter:<span id="wrongGuesses">0</span>
+				</div>
+
 			</div>
 		</div>
 	</div>
