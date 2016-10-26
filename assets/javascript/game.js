@@ -16,8 +16,8 @@ var letterGuessed = [];
 //Function Codes to call on later
 
 function startGame () {
-	selectedWord = wordOptions[Math.floor(Math.random() * wordOptions.lenght)];
-	lettersinWord = selectedWord.split(**);
+	selectedWord = wordOptions[Math.floor(Math.random() * wordOptions.length)];
+	lettersinWord = selectedWord.split("");
 	numBlanks = lettersinWord.length;
 
 	guessesLeft = 10;
@@ -43,14 +43,14 @@ function checkLetters(letter) {
 
 	var isLetterInWord = false;
 	for (var i=0; i<numBlanks; i++) {
-		if(selectedWord[i] == letter) {
+		if (selectedWord[i] == letter) {
 			is LetterInWord = true;
 		}
 	}
-	if(isLetterInWord) {
-	for (var i=0; i<numBlanks; i++) {
-		if (selectedWord[i] == letter) {
-			blanksAndSuccesses[i] = letter;
+	if (isLetterInWord) {
+		for (var i=0; i<numBlanks; i++) {
+			if (selectedWord[i] == letter) {
+				blanksAndSuccesses[i] = letter;
 			}
 		}
 	}
@@ -62,19 +62,34 @@ function checkLetters(letter) {
 
 	console.log(blanksAndSuccesses);
 
-	function roundComplete(){
+	function roundComplete() {
 		console.log("Win Count: "+ winCount +" | Loss Count: "+ lossCount +" | Guesses Left: "+ guessesLeft);
 	}
 
+if (lettersinWord.tostring() == blanksAndSuccesses.tostring()) {
+	winCount++;
+	alert("Whoo Who: You Won!")
+
+document.getElementsByID("winCounter").innerHTML = winCount;
+
+	startGame();
+}
+
+else if (guessesLeft == 0) {
+		lossCount++;
+		alert("Wa-Wa-Wa: You Lost!");
+
+		document.getElementsByID("lossCounter").innerHTML = lossCount;
+
+	startGame();
+	}
+}
+
 //Main Process
 
+	startGame();
 
-
-
-
-startGame();
-
-document.onkeyup = function(event){
+document.onkeyup = function(event) {
 	var letterGuessed = String.fromCharCode(event.keyCode).toLowerCase();
 	checkLetters(letterGuessed);
 	roundComplete();
