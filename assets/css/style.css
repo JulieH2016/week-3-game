@@ -1,6 +1,18 @@
-<meta name="viewport" content="width=device-width, initial-scale=1">
+/*Viewport*/
+@import url("reset.css");
 
 body {
-	background-size: 640px
-	background: url("../images/LongRoad.png");
+	background-image: ("../images/LongRoad.png");
+	object-position: absolute;
+	
 }
+
+/*general*/
+
+.container {
+	width: 100%;
+	max-width: 960px;
+	margin: 0 auto;
+	clear: both;
+}
+

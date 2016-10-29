@@ -44,7 +44,7 @@ function checkLetters(letter) {
 	var isLetterInWord = false;
 	for (var i=0; i<numBlanks; i++) {
 		if (selectedWord[i] == letter) {
-			is LetterInWord = true;
+			isLetterInWord = true;
 		}
 	}
 	if (isLetterInWord) {
@@ -58,13 +58,12 @@ function checkLetters(letter) {
 	else {
 		wrongLetters.push(letter);
 		guessesLeft ==
-	}
 
 	console.log(blanksAndSuccesses);
 
 	function roundComplete() {
 		console.log("Win Count: "+ winCount +" | Loss Count: "+ lossCount +" | Guesses Left: "+ guessesLeft);
-	}
+}
 
 if (lettersinWord.tostring() == blanksAndSuccesses.tostring()) {
 	winCount++;
@@ -95,4 +94,4 @@ document.onkeyup = function(event) {
 	roundComplete();
 
 	console.log(letterGuessed);
-}
+

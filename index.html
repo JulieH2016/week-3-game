@@ -5,78 +5,56 @@
 	<title>Hangman Game</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
 	<link rel="stylesheet" href="style.css">
-
+	<script type = "text/javascript" src = "assets/css/style.css"></script>
 </head>
-<body>
-	
+
+<body>	
 	<div class="container">
 		<div class="jumbotron">
 			<h1><Strong>CODER HANGMAN</Strong></h1>
 			<h2>Guess the 4 Letters in Each Word!</h2>
-			<p>(Hint: Associated with Coding)</p>
+			<h3>(Hint: Associated with Coding)</h3>
 		</div>
 	</div>
-
 	<div class="container">
 		<div class="row">
-		<div class="col-md-12"></div>
-
-			<div class="left panel left panel-default">
-				<div class="left panel heading">
-					<h3 class="left panel-title">SCOREBOARD</h3>
-				</div>
-
-				<div class="left panel-body">
-					<h3 class="left panel-title">Wins:</h3>
-				</div>
-				<div class="left panel-body">
-					Win Counter: <span id="winCounter">0</span>
-				</div>
-
-				<div class="left panel-body">
-					<h3 class="left panel-title">Losses:</h3>
-				</div>
-				<div class="left panel-body">
-					Loss Counter: <span id="lossCounter">0</span>
+			<div class="col-md-6">
+			</div>
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h3 class="panel-title"><Strong>SCOREBOARD</STRONG></h3>
+							<div class="panel-body">
+								<h3 class="panel-content">Wins</h3>
+								<h3 class="panel-content">Counter: <span id="winCounter">0</span></h3>
+								<h3 class="panel-content">Losses</h3>
+								<h3 class="panel-content">Counter: <span id="lossCounter">0</span></h3>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
-		</div>
+		</div>			
 	</div>
-
 	<div class="container">
-		<div class="row>">
-		<div class="col-md-12"></div>
-
-			<div class="right panel right panel-default">
-				<div class="right panel heading">
-					<h3 class="right panel-title">PRESS ANY KEY TO GET STARTED!</h3>
-				</div>
-
-				<div class="right panel-body">
-					<h3 class="right panel-title">Current Word:</h3>
-				</div>
-				<div class="right panel-body">
-					<h3>_ _ _ _</h3>
-				</div>
-
-				<div class="right panel-body">
-					<h3 class="right panel-title">Number of Guesses Remaining:</h3>
-				</div>
-					<div class="right panel-body">
-					Number of Guesses Remaining Counter:<span id="NumGuesses">0</span>
-				</div>
-
-				<div class="right panel-body">
-					<h3 class="right panel-title">Letters Already Guessed:</h3>
-				</div>
-					<div class="right panel-body">
-					Wrong Letters Guessed Counter:<span id="wrongGuesses">0</span>
+		<div class="row">
+			<div class="col-md-6">
+			</div>
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h3 class="panel-title"><Strong>PRESS ANY KEY TO GET STARTED!</Strong></h3>
+							<div class="panel-body">
+								<h3 class="panel-content">Current Word</h3>
+								<h3 class="panel-content">_ _ _ _<span id="correctGuesses">!</span></h3>
+								<h3 class="panel-content">Number of Guesses Remaining</h3>
+								<h3 class="panel-content">Count Down: <span id="NumGuesses">0</span></h3>
+								<h3 class="panel-content">Letters Already Guessed</h3>
+								<h3 class="panel-content">_ _ _ _ <span id="wrongGuesses">!</span></h3>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
-	</div>
-
-<script type= text/javascript src="game.js"></script>
-
+	</div>		
+	<script type = "text/javascript" src = "assets/javascript/game.js"></script>
 </body>
 </html>
