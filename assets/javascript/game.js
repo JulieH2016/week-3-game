@@ -1,7 +1,7 @@
 //Global Variables and Arrays to hold data
 
-var winCount = 0;
-var lossCount = 0;
+var winCounter = 0;
+var lossCounter = 0;
 
 var wordOptions = ["html", "css", "span", "file", "java"];
 var selectedWord = "";
@@ -44,7 +44,7 @@ function checkLetters(letter) {
 	var isLetterInWord = false;
 	for (var i=0; i<numBlanks; i++) {
 		if (selectedWord[i] == letter) {
-			isLetterInWord = true;
+			is LetterInWord = true;
 		}
 	}
 	if (isLetterInWord) {
@@ -58,12 +58,13 @@ function checkLetters(letter) {
 	else {
 		wrongLetters.push(letter);
 		guessesLeft ==
+	}
 
 	console.log(blanksAndSuccesses);
 
 	function roundComplete() {
-		console.log("Win Count: "+ winCount +" | Loss Count: "+ lossCount +" | Guesses Left: "+ guessesLeft);
-}
+		console.log("Win Count: "+ winCounter +" | Loss Count: "+ lossCounter +" | Guesses Left: "+ guessesLeft);
+	}
 
 if (lettersinWord.tostring() == blanksAndSuccesses.tostring()) {
 	winCount++;
@@ -94,4 +95,4 @@ document.onkeyup = function(event) {
 	roundComplete();
 
 	console.log(letterGuessed);
-
+}
