@@ -9,10 +9,11 @@ body {
 
 /*general*/
 
-.container {
+.container-fluid {
 	width: 100%;
 	max-width: 960px;
 	margin: 0 auto;
 	clear: both;
 }
+
 
